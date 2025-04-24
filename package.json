@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": ng build --output-path=dist --base-href=="/HappyNibble-FrontendApp/"
+    "build": "ng build --output-path=dist --base-href=='/HappyNibble-FrontendApp/'"
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:happyNibbleApp": "node dist/happy-nibble-app/server/server.mjs"
