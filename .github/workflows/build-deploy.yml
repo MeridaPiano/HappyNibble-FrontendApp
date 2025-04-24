@@ -20,7 +20,7 @@ jobs:
         run: npm install
     
       - name: Build Angular App
-        run: npm run build
+        run: npm run build -- --output-path=dist/happy-nibble-app
         
       - name: Deploy to gh pages
         run: |
