@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="0; url=index.html">
+
 # HappyNibbleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
