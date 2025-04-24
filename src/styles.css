@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+
+  /* Colores principales*/
+  --primary-color: #621478;
+  --secondary-color: #F6C81D;
+  --accent-color: #B264C8;
+  --background-color: #FAF7F5;
+  --text-dark-color: #333333;
+  --text-ligth-color: #FAF7F5;
+  --white: #fff;
+  --black: #000;
+  
+  /* Colores de alerta */
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  
+  /* Fuentes */
+  --primary-font: 'Menulis';
+  --secondary-font: 'Homemade';
+  --third-font: 'Nanami-ExtraLight';
+  --text-font: 'Quicksand';
+  --icon-font: 'FontAwesome'; /* Si usas FontAwesome*/
+  
+  /* Tamaños de letra */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-h1: 2.5rem; /* 40px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-h4: 1.5rem; /* 24px */
+  --font-size-h5: 1.25rem; /* 20px */
+  --font-size-h6: 1rem; /* 16px */
+  
+  /* Resoluciones (breakpoints) */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  
+  /* Espaciado */
+  --spacer: 1rem; /* 16px */
+  --spacer-sm: 0.5rem; /* 8px */
+  --spacer-lg: 1.5rem; /* 24px */
+  
+  /* Bordes */
+  --border-radius: 0.25rem;
+  --border-width: 1px;
+  --border-color: #dee2e6;
+  
+  /* Pesos de fuente */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* Sombras */
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  
+  /* Duración de transiciones */
+  --transition-duration: 0.3s;
+  --transition-timing-function: ease-in-out;
+  
+  /* Z-index */
+  --zindex-dropdown: 1000;
+  --zindex-sticky: 1020;
+  --zindex-fixed: 1030;
+  --zindex-modal-backdrop: 1040;
+  --zindex-modal: 1050;
+  --zindex-popover: 1070;
+  --zindex-tooltip: 1080;
+  
+  
+}
+h1 {
+font-family: var(--primary-font);
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-h1);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacer);
+}
+
+p {
+  font-family: var(--text-font);
+}
+
+li {
+  font-family: var(--text-font);
+}
+
+@font-face {
+  font-family: "Menulis";
+  src: url("/assets/fonts/Manulis/menulis.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nanami-ExtraLight";
+  src: url("/assets/fonts/Nanami-ExtraLight/Nanami-ExtraLight.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Homemade";
+  src: url("/assets/fonts/Homemade_Apple/HomemadeApple-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
