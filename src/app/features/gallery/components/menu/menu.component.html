@@ -1,0 +1,39 @@
+<h1>¿Como armar mi pastel?</h1>
+
+<h3>Elije tu base (Pan)</h3>
+<ul *ngFor="let row of cakePan; let i = index" >
+    <li>{{row.name}}:</li>
+    <ol>
+        <li>{{row.description}}.</li>
+    </ol>
+</ul>
+
+
+<h3>Selecciona tu Relleno Exquisito</h3>
+<ul *ngFor="let row of relleno; let i = index" >
+    <li>{{row.name}}:</li>
+    <ol>
+        <li>{{row.description}}.</li>
+    </ol>
+</ul>
+
+
+<h3>El Toque Final (Cubierta)</h3>
+<ul *ngFor="let row of cubierta; let i = index" >
+    <li>{{row.name}}:</li>
+    <ol>
+        <li>{{row.description}}.</li>
+    </ol>
+</ul>
+
+
+<h2>
+    Nuestras especialidades
+</h2>
+<h3>Las Combinaciones del Chef: Obras Maestras de Sabor</h3>
+<ul *ngFor="let row of especialidades; let i = index" >
+    <li>{{row.name}}:</li>
+    <ol>
+        <li>{{row.description}}.</li>
+    </ol>
+</ul>

@@ -1,0 +1,51 @@
+
+<div class="container">
+
+    
+    <h1>Cotiza alguno de nuestros servicios: </h1>
+    
+    <h4>Arma tu Paquete:</h4>
+    <mat-form-field>
+        <mat-label>Articulo</mat-label>
+        <mat-select>
+            <mat-option>None</mat-option>
+            @for (producto of productos; track producto) {
+                <mat-option [value]="producto">{{producto}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+    
+    <h4>Arma tu Paquete:</h4>
+    <mat-form-field>
+        <mat-label>Articulo</mat-label>
+        <mat-select>
+            <mat-option>None</mat-option>
+            @for (producto of productos; track producto) {
+                <mat-option [value]="producto">{{producto}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+
+    <h4>Tipo de Pastel:</h4>
+    <mat-form-field>
+        <mat-label>Tipo de Pastel</mat-label>
+        <mat-select>
+            <mat-option>None</mat-option>
+            @for (pastel of pasteles; track pastel) {
+                <mat-option [value]="pastel">{{pastel}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+
+    <h4>Tipo de Diseño:</h4>
+    <mat-form-field>
+        <mat-label>Tipod e Diseño</mat-label>
+        <mat-select>
+            <mat-option>None</mat-option>
+            @for (disenio of tipoDisenios; track disenio) {
+                <mat-option [value]="disenio">{{disenio}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+    
+</div>

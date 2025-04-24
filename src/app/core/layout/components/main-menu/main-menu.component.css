@@ -1,0 +1,44 @@
+#navbarNav{
+  width: 100%;
+}
+
+.nav-item {
+  font-family: var(--third-font);
+  font-size: 1.25rem;
+}
+.nav-link {
+  color: var(--text-ligth-color) !important;
+}
+
+.dropdown-item {
+  color: var(--primary-color);
+  font-family: var(--third-font);
+  font-size: 1rem !important;
+}
+
+.dropdown-hover:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none; /* Oculta el dropdown por defecto */
+  position: absolute; /* Asegura que el dropdown se superponga */
+  z-index: 1000; /* Asegura que el dropdown esté encima de otros elementos */
+}
+
+.dropdown-item:hover {
+  color: var(--text-ligth-color) !important;
+  background-color: var(--primary-color) !important;
+  font-size: 1rem !important;
+}
+
+.dropdown-item.active {
+  background-color: var(--accent-color); /* Cambia el color de fondo del elemento activo */
+  color: #fff; /* Cambia el color del texto del elemento activo */
+}
+
+.nav-link.active {
+  background-color: var(--accent-color); /* Cambia el color de fondo del elemento activo */
+  color: #fff; /* Cambia el color del texto del elemento activo */
+}

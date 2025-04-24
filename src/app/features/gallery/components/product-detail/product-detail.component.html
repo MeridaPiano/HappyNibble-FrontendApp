@@ -1,0 +1,18 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3" style="background-color: blueviolet;">
+            <img [alt]="productDetail?.alt" [src]="productDetail?.src" >
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col" style="background-color: yellowgreen">{{productDetail?.category}}</div>
+                <div class="col" style="background-color: gold">....</div>
+                <div class="col" style="background-color: burlywood">Price</div>
+            </div>
+            <div class="row" style="background-color: aqua;">{{ productDetail?.description }}</div>
+        </div>
+    </div>
+</div>
+

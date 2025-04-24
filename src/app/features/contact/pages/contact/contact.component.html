@@ -1,0 +1,67 @@
+
+
+<div class="container">
+  
+  <div class="row m-4">
+    <h1>Formulario de contacto</h1>
+  </div>
+    
+  <div class="row my-4" id="contact-container">
+    <div class="col-6 p-4 info-space">
+    </div>
+    <div class="col-6 p-4 form-space">
+      <div class="row">
+        <div class="col">
+          <form [formGroup]="contactForm" autocomplete="off">
+      
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label">Nombre:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="name" placeholder="Ingresa tu Nombre">
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label">Apellido:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="surname" placeholder="Ingresa tu Apellido">
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label">Teléfono:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="phone" placeholder="Ingresa tu Teléfono">
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label">Correo:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="email" placeholder="Ingresa tu Correo">
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label">Mensaje:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="message" placeholder="Ingresa tu Mensaje">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col">
+                <button type="submit" class="btn btn-primary float-end">Enviar</button>
+              </div>
+            </div>
+      
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

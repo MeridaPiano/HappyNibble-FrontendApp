@@ -1,0 +1,22 @@
+.spec-ele1 {
+  background-color: var(--accent-color);
+  padding: 15px;
+  margin: 15px;
+}
+
+.spec-ele2 {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  margin: 15px;
+}
+
+.contenedor-imagen {
+  overflow: hidden;
+  /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}

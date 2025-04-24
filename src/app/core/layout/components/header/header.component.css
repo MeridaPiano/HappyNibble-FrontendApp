@@ -1,0 +1,50 @@
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.header-bar{
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.over-header {
+  background-color: var(--secondary-color);
+}
+
+.over-header p {
+  text-align: right;
+  padding-right: 5%;
+  color: var(--primary-color);
+}
+
+.title {
+  color: var(--text-ligth-color);
+  font-family: var(--primary-font);
+  font-size: 2.25rem !important;
+}
+
+img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.social{
+  color: var(--text-ligth-color);
+  font-size: 1.5rem !important;
+}
+
+.social  a {
+  text-decoration: none;
+  color: var(--text-ligth-color);
+}
+/* mouse over link */
+.social  a:hover {
+  color: var(--secondary-color);
+}
+.social a  i{
+  margin-left: 5%;
+}
+

@@ -1,0 +1,46 @@
+
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#"></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      @for (item of menuItems; track $index){
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-hover"
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          id="navbarDropdown"
+          role="button"
+          aria-expanded="false">
+          {{ item.title }}
+        </a>
+        @if (item.children) {
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            @for (subitem of item.children; track $index){
+              <li class="nav-item" >
+                <a
+                  class="dropdown-item"
+                  [routerLink]="['/',item.path,subitem.path]"
+                  routerLinkActive="active">
+                  {{ subitem.title }}
+                </a>
+              </li>
+            }
+          </ul>
+        }
+      </li>
+    }
+    </ul>
+  </div>
+</nav>

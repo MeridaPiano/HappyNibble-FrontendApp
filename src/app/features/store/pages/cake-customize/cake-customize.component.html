@@ -1,0 +1,49 @@
+
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+
+            <h1>Arma tu pastel: </h1>
+            
+            <h4>Elige el tipo de Pastel:</h4>
+            <mat-form-field>
+                <mat-label>Articulo</mat-label>
+            <mat-select>
+                <mat-option>None</mat-option>
+                @for (tipo of tipoPasteles; track tipo) {
+                    <mat-option [value]="tipo">{{tipo}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+    
+        <h4>Elige el Pan:</h4>
+        <mat-form-field>
+            <mat-label>Articulo</mat-label>
+            <mat-select>
+                <mat-option>None</mat-option>
+                @for (pan of panes; track pan) {
+                    <mat-option [value]="pan">{{pan}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        
+        <h4>Tipo de Pastel:</h4>
+        <mat-form-field>
+            <mat-label>Tipo de Pastel</mat-label>
+            <mat-select>
+                <mat-option>None</mat-option>
+                @for (relleno of rellenos; track relleno) {
+                    <mat-option [value]="relleno">{{relleno}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+    
+        </div>
+
+        <div class="col">
+            <img src="./../../../../../assets/images/gallery/space-bunny-cake.jpg" alt="" style="width: 50%; height: 100%;">
+        </div>
+    </div>
+    
+</div>

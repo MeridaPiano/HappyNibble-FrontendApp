@@ -1,0 +1,61 @@
+/* div {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2); 
+    transform-origin: center;
+} */
+
+.gallery-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background */
+  }
+  
+  .gallery-item {
+    width: 250px; /* Adjust as needed */
+    margin: 15px;
+    border-radius: 8px;
+    overflow: hidden; /* Hide any overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background for each item */
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent image display */
+    object-fit: cover; /* Crop images to fill the space */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .gallery-item-details {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .gallery-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .gallery-item-description {
+    font-size: 14px;
+    color: #666;
+  }

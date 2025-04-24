@@ -1,0 +1,36 @@
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.footer-bar{
+  background-color: var(--primary-color);
+  width: 100%;
+}
+p {
+  color: var(--text-ligth-color)  !important;
+}
+
+h5 {
+  color: var(--text-ligth-color) ;
+}
+
+.nav-link {
+  color: var(--text-ligth-color) !important;
+}
+
+.under-footer {
+  background-color: var(--accent-color);
+  color: var();
+}
+
+.under-footer p {
+  padding-left: 5%;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin-right: 25%;
+  margin-left: 25%;
+}

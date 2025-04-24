@@ -1,0 +1,66 @@
+<!-- 
+
+<div class="row">
+    <div class="col">
+        <img class="img-fluid" [src]="galleryList[0][0].src" [alt]="galleryList[0][0].alt" >
+    </div>
+    <div class="col" style="background-color: grey;">
+        <img class="img-fluid" [src]="galleryList[0][1].src" [alt]="galleryList[0][1].alt"  >
+    </div>
+</div>
+<div class="row">
+    <div class="col" style="background-color: red;">
+        <img class="img-fluid" [src]="galleryList[1][0].src" [alt]="galleryList[1][0].alt"  >
+    </div>
+    <div class="col">
+        <div class="row">
+            <div class="col" style="background-color: purple;">
+                <img class="img-fluid" [src]="galleryList[1][1].src" [alt]="galleryList[1][1].alt"  >
+            </div>
+            <div class="col" style="background-color: orange;">
+                <img class="img-fluid" [src]="galleryList[1][2].src" [alt]="galleryList[1][2].alt"  >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="background-color: violet;">
+                <img class="img-fluid" [src]="galleryList[2][0].src" [alt]="galleryList[2][0].alt" >
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row" style="background-color: gold;">
+            <img class="img-fluid" [src]="galleryList[2][1].src" [alt]="galleryList[2][1].alt" >
+        </div>
+        <div class="row" style="background-color: pink;">
+            <img class="img-fluid" [src]="galleryList[2][2].src" [alt]="galleryList[2][2].alt"  >
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- <div class="row" *ngFor="let row of galleryList; let i = index">
+    <div class="col" *ngFor="let image of row; let j = index">
+      <img
+        class="img-fluid"
+        [src]="image.src"
+        [alt]="image.alt || 'Image'"
+      />
+    </div>
+  </div> -->
+
+<div class="gallery-container">
+  <div class="row" *ngFor="let row of galleryList; let i = index" >
+    <div class="col" *ngFor="let image of row; let j = index">
+      <div class="gallery-item" *ngIf="image.category === pathActive" (click)="openModal(image)">
+        <img class="img-fluid" [src]="image.src" [alt]="image.alt || 'Image'" />
+        <div class="gallery-item-details">
+          <h3 class="gallery-item-title">{{ image.title }}</h3>
+          <p class="gallery-item-description">{{ image.description }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  

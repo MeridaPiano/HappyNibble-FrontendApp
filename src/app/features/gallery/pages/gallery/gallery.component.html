@@ -1,0 +1,38 @@
+<div class="container p-4">
+  <div class="row p-4">
+    <div class="column p-2">
+      <h1>Galeria de {{this.pageTitle}}</h1>
+    </div>
+  </div>
+
+  <div class="row p-4">
+    <div class="column p-2">
+      <image-gallery [galleryList]="galleryFondant" [pathActive]="pathActive"
+        (selectedImage)="onImageSelected($event)"></image-gallery>
+    </div>
+  </div>
+
+  <div class="row p-4">
+    <div class="column p-2">
+      <product-list *ngIf="selectedProduct" [product]="selectedProduct"></product-list>
+    </div>
+  </div>
+
+  <div class="row p-4">
+    <div class="column p-2">
+      <menu></menu>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <generic-modal
+  *ngIf="selectedProduct"
+  title="{{ selectedProduct.title }}"
+  description="{{ selectedProduct.description }}"
+  type="confirmation"
+  (closeModal)="closeModal($event)">
+
+  <img [src]="selectedProduct.src" [alt]="selectedProduct.alt" style="max-width: 100%;" />
+</generic-modal> -->
