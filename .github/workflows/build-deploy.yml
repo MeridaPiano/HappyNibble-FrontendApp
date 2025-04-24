@@ -11,10 +11,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         
-      - name: Adding Node.js 22
+      - name: Adding Node.js 18
         uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: '18'
             
       - name: Install Dependencies
         run: npm install
